@@ -10,12 +10,12 @@ import java.util.List;
 import java.util.Optional;
 
 // @Service를 해줘야 스프링에서 controller에 해당 서비스를 DI해줄 수 있다.
-@Service
+//@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
+    //@Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

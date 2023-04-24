@@ -15,7 +15,7 @@ public class MemberController {
 
     private final MemberService memberService;
 
-    @Autowired
+    //@Autowired
     public MemberController(MemberService memberService) {
         /*
         * Autowired를 쓰면 스프링이 DI를 해준다.
