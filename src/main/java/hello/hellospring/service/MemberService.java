@@ -6,11 +6,14 @@ import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 // @Service를 해줘야 스프링에서 controller에 해당 서비스를 DI해줄 수 있다.
 //@Service
+
+@Transactional // jpa를 사용할 땐 꼭 필요, 저장, 삭제 등 할 때!
 public class MemberService {
 
     private final MemberRepository memberRepository;
